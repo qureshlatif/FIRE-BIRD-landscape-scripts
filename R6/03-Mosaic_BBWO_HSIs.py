@@ -15,7 +15,7 @@ wildfire_years = range(1985, 1994) + range(1995, 2016)
 HSI_dir = base + "R6/"
 #_________________________________________#
 
-for t in range(0, len(years)):
+for t in range(0, len(wildfire_years)):
     wf_dir = base + wildfire_data_dir + str(wildfire_years[t]) + '/'
     BB_polys = glob.glob(wf_dir + "brn_bounds/*.shp")
     BB_polys = [bb for bb in BB_polys if bb[89:91] == 'or' or bb[89:91] == 'wa']
